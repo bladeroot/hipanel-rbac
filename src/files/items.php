@@ -338,21 +338,6 @@ return [
             'role:plan.manager',
         ],
     ],
-    'role:profiletariff.manager' => [
-        'type' => 1,
-        'children' => [
-            'profiletariff.read',
-        ],
-    ],
-    'role:profiletariff.master' => [
-        'type' => 1,
-        'children' => [
-            'profiletariff.read',
-            'profiletariff.create',
-            'profiletariff.update',
-            'profiletariff.delete',
-        ],
-    ],
     'role:document.user' => [
         'type' => 1,
         'children' => [
@@ -563,7 +548,6 @@ return [
             'mailing.prepare',
             'mailing.send',
             'client.set-tmp-pwd',
-            'role:profiletariff.manager',
         ],
     ],
     'role:reseller' => [
@@ -574,7 +558,6 @@ return [
             'role:finance.master',
             'deny:access-reseller',
             'role:manager',
-            'role:profiletariff.master',
         ],
     ],
     'role:owner' => [
@@ -1327,30 +1310,6 @@ return [
         'type' => 2,
     ],
     'deny:price.create' => [
-        'type' => 2,
-    ],
-    'profiletariff.read' => [
-        'type' => 2,
-    ],
-    'deny:profiletariff.read' => [
-        'type' => 2,
-    ],
-    'profiletariff.create' => [
-        'type' => 2,
-    ],
-    'deny:profiletariff.create' => [
-        'type' => 2,
-    ],
-    'profiletariff.update' => [
-        'type' => 2,
-    ],
-    'deny:profiletariff.update' => [
-        'type' => 2,
-    ],
-    'profiletariff.delete' => [
-        'type' => 2,
-    ],
-    'deny:profiletariff.delete' => [
         'type' => 2,
     ],
     'document.read' => [
